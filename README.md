@@ -1,4 +1,4 @@
-# bhairavdynamics.github.io
+
 Bhairav Dynamics Private Limited is an emerging Indian defence-technology startup dedicated to designing and developing next-generation unmanned combat systems, advanced drones, and artificial intelligence-powered defence solutions. With innovation, self-reliance, and cost-effectiveness at its core, the company aims to strengthen India’s position as a global leader in defence technology.
 
 Our flagship project, Vajrang UCAV, represents a breakthrough in unmanned combat aerial vehicle design. It combines stealth architecture, autonomous AI systems, and extended range capabilities to meet the operational needs of modern battlefields. Alongside, Bhairav Dynamics is actively engaged in research and development of loitering munitions, high-endurance surveillance UAVs, precision missile systems, and advanced avionics technologies.
