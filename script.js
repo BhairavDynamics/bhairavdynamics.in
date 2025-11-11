@@ -1,6 +1,6 @@
 // =======================================================
 // Main JavaScript file for Bhairav Dynamics Website
-// (Opportunity forms removed — only contact form remains)
+// (Contact form now connected to Render backend)
 // =======================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -123,7 +123,7 @@ function initializeModal() {
     });
 }
 
-// ---------------- Contact Form ----------------
+// ---------------- Contact Form (Updated) ----------------
 function initializeContactForm() {
     const contactForm = document.getElementById('contactForm');
     if (!contactForm) return;
@@ -136,7 +136,10 @@ function initializeContactForm() {
         const data = Object.fromEntries(formData.entries());
 
         try {
-            const response = await fetch('/api/contact', {
+            // ✅ Replace this URL with your Render backend URL
+            const backendURL = "https://bhairavdynamics-in.onrender.com/api/contact";
+
+            const response = await fetch(backendURL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
@@ -163,7 +166,7 @@ function showThankYouModal() {
     if (modal) {
         modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
-        setTimeout(() => closeThankYouModal(), 3000); // auto close after 3 sec
+        setTimeout(() => closeThankYouModal(), 3000);
     }
 }
 
@@ -182,14 +185,6 @@ function setFormLoading(form, isLoading) {
         submitBtn.disabled = isLoading;
         submitBtn.textContent = isLoading ? 'Submitting...' : 'Submit';
     }
-}
-
-function validateEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
-function validatePhone(phone) {
-    return /^[\+]?[1-9][\d]{0,15}$/.test(phone.replace(/\s/g, ''));
 }
 
 // ---------------- Fade-in Animation ----------------
@@ -270,3 +265,4 @@ function debounce(func, wait) {
         timeout = setTimeout(() => func(...args), wait);
     };
 }
+
