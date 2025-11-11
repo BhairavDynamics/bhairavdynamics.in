@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="public\bhairav logo.png" type="image/png">
+    <title>Opportunity - Bhairav Dynamics</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="public\bhairav logo.png" alt="Bhairav Dynamics Logo" class="logo">
+                    <div class="company-info">
+                        <h1 class="company-name">Bhairav Dynamics</h1>
+                        <p class="tagline">Advanced Defence & Aerospace Technologies</p>
+                    </div>
+                </div>
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="opportunity.html" class="active">Opportunity</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-mobile" id="navMobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="opportunity.html">Opportunity</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Opportunity Section -->
+    <section class="opportunity-page">
+        <div class="container">
+            <h1 class="page-title">!! Opportunity !!</h1>
+            
+            <!-- Initial Form -->
+            <div class="opportunity-form-container" id="initialForm">
+                <form class="opportunity-form" id="opportunityForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp Number</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode">Zip Code / Postal Code</label>
+                            <input type="text" id="zipcode" name="zipcode" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="opportunityType">Opportunity Type</label>
+                        <select id="opportunityType" name="opportunityType" required>
+                            <option value="">Select Opportunity Type</option>
+                            <option value="internship">Internship/Job</option>
+                            <option value="partnership">Partnership/Vendor</option>
+                            <option value="investment">Investment/Funding</option>
+                        </select>
+                    </div>
+                    
+                    <button type="button" class="next-btn" id="nextBtn">Next</button>
+                </form>
+            </div>
+
+            <!-- Internship/Job Form -->
+            <div class="opportunity-form-container hidden" id="internshipForm">
+                <form class="opportunity-form" id="jobForm">
+                    <div class="form-group">
+                        <label for="resume">Upload Resume</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="skills">Skills & Expertise</label>
+                        <textarea id="skills" name="skills" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whyWorkWithUs">Why do you want to work with us?</label>
+                        <textarea id="whyWorkWithUs" name="whyWorkWithUs" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+            <!-- Partnership/Vendor Form -->
+            <div class="opportunity-form-container hidden" id="partnershipForm">
+                <form class="opportunity-form" id="vendorForm">
+                    <div class="form-group">
+                        <label for="companyName">Company/Organization Name</label>
+                        <input type="text" id="companyName" name="companyName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="collaboration">Area of Collaboration</label>
+                        <textarea id="collaboration" name="collaboration" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="proposal">Proposal/Short Description</label>
+                        <textarea id="proposal" name="proposal" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="proposalDoc">Upload Proposal Documents</label>
+                        <input type="file" id="proposalDoc" name="proposalDoc" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+            <!-- Investment/Funding Form -->
+            <div class="opportunity-form-container hidden" id="investmentForm">
+                <form class="opportunity-form" id="fundingForm">
+                    <div class="form-group">
+                        <label for="investmentInterest">Investment Interest (Amount/Type)</label>
+                        <textarea id="investmentInterest" name="investmentInterest" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whyInterested">Why are you interested in Bhairav Dynamics?</label>
+                        <textarea id="whyInterested" name="whyInterested" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="fundName">Company/Fund Name</label>
+                        <input type="text" id="fundName" name="fundName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pitchDoc">Upload Pitch/Additional Documents</label>
+                        <input type="file" id="pitchDoc" name="pitchDoc" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You Modal -->
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeThankYouModal()">&times;</span>
+            <div class="thank-you-content">
+                <h2>Thank You!</h2>
+                <p>Your application has been submitted successfully. We will review it and get back to you soon.</p>
+                <button onclick="closeThankYouModal()" class="btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 Bhairav Dynamics. All rights reserved.</p>
+            </div>
+            <div class="make-in-india">
+                <p>🇮🇳 Make in India</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
